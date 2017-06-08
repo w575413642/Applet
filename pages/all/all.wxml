@@ -1,0 +1,13 @@
+
+<view class="all-order">
+<input class="search" placeholder="请输入" />
+<!--tab switch-->
+<view class="tab">
+  <view class="switch">
+  全部( {{ msg }} )
+  </view>
+</view>
+
+<!--循环操作仓库-->
+<view class="classname"></view>
+</view>

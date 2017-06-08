@@ -1,0 +1,79 @@
+<view class="all">
+  <view class="head">
+    <text class="fl_l">优品商城</text>
+    <input type="text" class="search fl_l" placeholder="输入您像搜索的物品" />
+    <view class="tips fl_l">
+      消息
+    </view>
+  </view>
+  <view class="body">
+    <!--swiper-->
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <!--nav-->
+    <view class="nav">
+      <view class="fl_l">
+        <image src="images/a (1).png" bindload="imageLoad"></image>
+        购物车
+      </view>
+      <view class="fl_l">
+        <image src="images/a (2).png" bindload="imageLoad"></image>
+        我的订单
+      </view>
+      <view class="fl_l">
+        <image src="images/a (3).png" bindload="imageLoad"></image>
+        全部分类
+      </view>
+      <view class="fl_l">
+        <image src="images/a (4).png" bindload="imageLoad"></image>
+        个人中心
+      </view>
+    </view>
+    <!--headlins-->
+    <view class="headlines">
+      <image src="images/shop.png"></image>
+      <view class="tips" wx:for="{{shop_list}}">
+        {{item.msg}}
+      </view>
+    </view>
+    <!--h2line-->
+    <view class="line"></view>
+  </view>
+  <!--commend-->
+  <view class="commend">
+    <text>热门推荐</text>
+    <view>更多···</view>
+  </view>
+  <!--goods-->
+  <view class="goods_all">
+    <view class="goods" wx:for="{{twoList}}" wx:key="id">
+      <image src="{{item.src}}"></image>
+      <view wx:for="{{item.twodata}}" wx:for-item="twodata" wx:key="id">
+        {{twodata.name}}
+      </view>
+      <view class="font" wx:for="{{item.threedata}}" wx:for-item="threedata" wx:key="id">
+        {{threedata.name}}
+      </view>
+    </view>
+  </view>
+  <!--h2line-->
+  <view class="line"></view>
+  <!--commend-->
+  <view class="commend">
+    <text>新品推荐</text>
+    <view>更多···</view>
+  </view>
+  <!--second_goods-->
+  <view class="second">
+    <view class="wrap" wx:for="{{botList}}" wx:key="id">
+      <image src="{{item.src}}"></image>
+      <view wx:for="{{item.twodata}}" wx:for-item="twodata">{{twodata.name}}</view>
+      <view class="money" wx:for="{{item.threedata}}" wx:for-item="threedata">{{threedata.money}}</view>
+    </view>
+  </view>
+</view>

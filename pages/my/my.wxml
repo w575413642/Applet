@@ -1,0 +1,68 @@
+<!--my.wxml-->
+<view class="container_my">
+  <view class="head">
+    <view class="head_top">
+      <image class="back" src="images/my-back.png"></image>
+      <view class="posi_self">
+        <image class="self" src="{{src}}"></image>
+        <text class="name">{{name}}</text>
+        <text class="level">{{level}}</text>
+      </view>
+    </view>
+    <view class="head_bot">
+      <view class="myself_msg fl_l" wx:for="{{state}}">
+        <view>{{item.data}}</view>
+        <view wx:for="{{item.name}}" wx:for-item="arc">{{arc.title}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--order-->
+<!--h2line-->
+<view class="line"></view>
+<!--all_order-->
+<view class="all_order" bindtap="href">
+  <text class="fl_l">全部订单</text>
+  <view class="fl_r">查看全部订单 ></view>
+</view>
+<view class="order">
+  <view class="order-box" wx:for="{{order}}">
+    <view class="{{item.font}} font"></view>
+    <view class="right-title" wx:for="{{item.num}}" wx:for-item="numc">{{numc.title}}</view>
+    <view class="name" wx:for="{{item.name}}" wx:for-item="namec">{{namec.li}}</view>
+  </view>
+</view>
+<!--h2line-->
+<view class="line"></view>
+<!--ul-->
+<view class="ul">
+  <view class="li">
+    <view class="icon iconfont icon-shoucang font fl_l color_red"></view>
+    <view class="title  fl_l">我的收藏</view>
+    <view class="msg fl_r">商品收藏 ></view>
+  </view>
+   <view class="li">
+    <view class="icon iconfont icon-jifen2 font fl_l color_tiffany"></view>
+    <view class="title  fl_l">积分余额</view>
+    <view class="msg fl_r">积分账户 ></view>
+  </view>
+   <view class="li">
+    <view class="icon iconfont icon-dingwei1 font fl_l color_pink"></view>
+    <view class="title  fl_l">收货地址</view>
+    <view class="msg fl_r">添加/修改 ></view>
+  </view>
+   <view class="li">
+    <view class="icon iconfont icon-flower font fl_l color_orange"></view>
+    <view class="title  fl_l">评价/晒单</view>
+    <view class="msg fl_r">查看评价晒单 ></view>
+  </view>
+   <view class="li">
+    <view class="icon iconfont icon-gerenziliao font fl_l color_green"></view>
+    <view class="title  fl_l">个人资料</view>
+    <view class="msg fl_r">查看/修改 ></view>
+  </view>
+   <view class="li">
+    <view class="icon iconfont icon-zhuxiao font fl_l color_blue"></view>
+    <view class="title  fl_l">注销登陆</view>
+  </view>
+</view>

@@ -1,0 +1,171 @@
+.all {
+  font-family: '微软雅黑';
+  font-size: 15px;
+}
+
+.line {
+  height: 8px;
+  background: #f3f5f7;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  clear: both;
+}
+
+.fl_l {
+  float: left;
+}
+
+/*head*/
+
+.head {
+  background: #f23030;
+  overflow: hidden;
+}
+
+.head text {
+  line-height: 40px;
+  color: white;
+  margin: auto 3%;
+}
+
+.head input {
+  background: white;
+  height: 25px;
+  width: 60%;
+  margin: 7.5rpx;
+  border-radius: 15px;
+  font-size: 12px;
+  text-indent: 1em;
+}
+
+.head .tips {
+  width: 10%;
+  line-height: 40px;
+  color: white;
+}
+
+/*nav*/
+
+.nav {
+  width: 90%;
+  margin: auto;
+  margin-top: 16px;
+  overflow: hidden;
+}
+
+.nav .fl_l {
+  width: 15%;
+  margin: 0px 5%;
+  text-align: center;
+  font-size: 10px;
+}
+
+.nav image {
+  width: 100rpx;
+  height: 100rpx;
+  margin: auto;
+  display: block;
+}
+
+/*headllines*/
+
+.headlines {
+  overflow: hidden;
+  width: 80%;
+  margin: 14px auto;
+}
+
+.headlines image {
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+
+.headlines .tips {
+  margin-left: 30%;
+  text-align: left;
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/*commend*/
+
+.commend {
+  overflow: hidden;
+  width: 90%;
+  margin: 12px auto;
+}
+
+.commend text {
+  float: left;
+}
+
+.commend view {
+  float: right;
+}
+
+/*goods*/
+
+.goods_all {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  border-top: 3px solid #eee;
+  padding-top: 28rpx;
+}
+
+.goods_all .goods {
+  width: 30%;
+  float: left;
+  margin: 0px 1.5%;
+}
+
+.goods_all .goods image {
+  width: 190rpx;
+  height: 190rpx;
+  display: block;
+  margin: auto;
+}
+
+.goods_all .goods view {
+  text-align: left;
+  font-size: 12px;
+}
+
+.goods_all .goods .font {
+  text-align: left;
+  color: red;
+}
+
+/*second*/
+
+.second {
+  border-top: 3px solid #eee;
+  padding-top: 28rpx;
+  overflow: hidden;
+  width: 95%;
+  margin: auto;
+}
+
+.second .wrap {
+  width: 45%;
+  margin: 0px 2.5%;
+  float: left;
+  overflow: hidden;
+}
+
+.second .wrap image {
+  width: 315rpx;
+  height: 315rpx;
+  ddisplay: block;
+  margin: auto;
+}
+
+.second .wrap view {
+  font-size: 14px;
+  line-height: 24px;
+}
+.second .wrap .money {
+  color: red;
+}
