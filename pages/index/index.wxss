@@ -14,7 +14,9 @@
 .fl_l {
   float: left;
 }
-
+.swiper image{
+  width: 750rpx;
+}
 /*head*/
 
 .head {

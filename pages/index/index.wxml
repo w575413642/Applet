@@ -8,6 +8,7 @@
   </view>
   <view class="body">
     <!--swiper-->
+    <view class="swiper">
     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
       <block wx:for="{{imgUrls}}">
         <swiper-item>
@@ -15,6 +16,7 @@
         </swiper-item>
       </block>
     </swiper>
+    </view>
     <!--nav-->
     <view class="nav">
       <view class="fl_l">
