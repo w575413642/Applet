@@ -2,22 +2,34 @@
 var util = require('../../utils/util.js')
 Page({
   data: {
+    ac: 1,    
     tab: [{
       name: '全部',
-      num: 23
+      num: 23,
+      ks:1,
     }, {
       name: '待付款',
-      num: 2
+      num: 2,
+      ks: 2,
       }, {
         name: '待发货',
-        num: 17
+        num: 17,
+      ks: 3,
     }, {
       name: '待收货',
-      num: 33
+      num: 33,
+      ks: 4,
       }, {
         name: '待评价',
-        num: 11
+        num: 11,
+      ks: 5,
       },]
+  },
+  changeOrder: function(e){
+    console.log(e)
+   this.setData({
+     ac: e.target.dataset.ks
+   })
   },
   onLoad: function () {
     this.setData({

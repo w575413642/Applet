@@ -3,8 +3,8 @@
 <input class="search" placeholder="请输入" />
 <!--tab switch-->
 <view class="tab">
-  <view class="switch" wx:for="{{tab}}" class="{{ (ac == 1)? a : b }}" >
-  {{item.name}}( {{ item.num }} )
+  <view class="switch {{ (ac == item.ks)? 'color' :'' }}" wx:for="{{tab}}" bindtap="changeOrder" data-ks="{{item.ks}}">
+  {{item.name}}({{ item.num }})
   </view>
 </view>
 

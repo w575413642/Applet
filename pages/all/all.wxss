@@ -8,4 +8,13 @@
 }
 .tab view{
 float: left;
+width: 18%;
+margin: 0px 1%;
+font-size: 27rpx;
+text-align: center;
+line-height: 48rpx;
+}
+.tab .color{
+border-bottom: 2px solid #f23030;
+color: #f23030  
 }
