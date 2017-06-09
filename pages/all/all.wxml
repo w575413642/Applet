@@ -7,7 +7,14 @@
   {{item.name}}({{ item.num }})
   </view>
 </view>
-
+<!--order-->
+<view class="order">
+  <view class="order-title">
+    <view class="ico"></view>
+    <view class="num">订单号：{{ item.num }}</view>
+    <view class="classname"></view>
+  </view>
+</view>
 <!--循环操作仓库-->
 <view class="classname"></view>
 </view>

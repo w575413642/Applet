@@ -26,10 +26,11 @@ Page({
       },]
   },
   changeOrder: function(e){
-    console.log(e)
+    // 切换tab
    this.setData({
      ac: e.target.dataset.ks
    })
+  //  重新刷新库
   },
   onLoad: function () {
     this.setData({
