@@ -23,7 +23,14 @@ Page({
         name: '待评价',
         num: 11,
       ks: 5,
-      },]
+      }],
+      shop:[{
+        num:'13131313131131313131',
+        status:'已经发货',
+        img:'http://demoshop.youpzt.com/uploads/product/2017-01-27/588a21675dd1d.jpg',
+        shopName:'平板电视平板电视平板电视平板电视平板电视平板电视平板电视平板电视平板电视平板电视平板电视'
+      }
+        ]
   },
   changeOrder: function(e){
     // 切换tab

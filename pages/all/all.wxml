@@ -1,20 +1,25 @@
-
 <view class="all-order">
-<input class="search" placeholder="请输入" />
-<!--tab switch-->
-<view class="tab">
-  <view class="switch {{ (ac == item.ks)? 'color' :'' }}" wx:for="{{tab}}" bindtap="changeOrder" data-ks="{{item.ks}}">
-  {{item.name}}({{ item.num }})
-  </view>
-</view>
-<!--order-->
-<view class="order">
-  <view class="order-title">
-    <view class="ico"></view>
-    <view class="num">订单号：{{ item.num }}</view>
-    <view class="classname"></view>
-  </view>
-</view>
-<!--循环操作仓库-->
-<view class="classname"></view>
+	<input class="search" placeholder="请输入" />
+	<!--tab switch-->
+	<view class="tab">
+		<view class="switch {{ (ac == item.ks)? 'color' :'' }}" wx:for="{{tab}}" bindtap="changeOrder" data-ks="{{item.ks}}">
+			{{item.name}}({{ item.num }})
+		</view>
+	</view>
+	<!--order-->
+	<view class="order">
+		<view class="order-title" wx:for="{{shop}}">
+			<view class="icon iconfont icon-dingdanhao font fl_l color_red"></view>
+			<view class="num">订单号：{{ item.num }}</view>
+			<view class="status">
+				{{ item.status }}
+			</view>
+			<view class="shop">
+				<image src="{{ item.img }}"></image>
+        <view class="name">{{item.shopName}}</view>
+        <view class="tips"></view>
+			</view>
+		</view>
+	</view>
+
 </view>
