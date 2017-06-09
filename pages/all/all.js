@@ -4,19 +4,19 @@ Page({
   data: {
     tab: [{
       name: '全部',
-      num: 12
+      num: 23
     }, {
-      name: '全部',
-      num: 12
+      name: '待付款',
+      num: 2
       }, {
-        name: '全部',
-        num: 12
+        name: '待发货',
+        num: 17
     }, {
-      name: '全部',
-      num: 12
+      name: '待收货',
+      num: 33
       }, {
-        name: '全部',
-        num: 12
+        name: '待评价',
+        num: 11
       },]
   },
   onLoad: function () {

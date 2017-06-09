@@ -3,8 +3,8 @@
 <input class="search" placeholder="请输入" />
 <!--tab switch-->
 <view class="tab">
-  <view class="switch">
-  全部( {{ msg }} )
+  <view class="switch" wx:for="{{tab}}" class="{{ (ac == 1)? a : b }}" >
+  {{item.name}}( {{ item.num }} )
   </view>
 </view>
 
