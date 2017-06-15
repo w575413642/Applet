@@ -9,16 +9,30 @@
 	<!--order-->
 	<view class="order">
 		<view class="order-title" wx:for="{{shop}}">
-			<view class="icon iconfont icon-dingdanhao font fl_l color_red"></view>
-			<view class="num">订单号：{{ item.num }}</view>
-			<view class="status">
-				{{ item.status }}
+			<view class="title">
+				<text class="fl_l icon iconfont icon-dingdanhao font fl_l color_red"></text>
+				<view class="fl_l num">订单号：{{ item.num }}</view>
+				<view class="fl_l status">
+					{{ item.status }}
+				</view>
 			</view>
-			<view class="shop">
-				<image src="{{ item.img }}"></image>
-        <view class="name">{{item.shopName}}</view>
-        <view class="tips"></view>
+			<view class="shop" wx:for="{{item.shop_n}}" wx:for-item="type">
+				<image class="fl_l" src="{{ type.img }}"></image>
+				<view class="fl_l shop-msg">
+					<view class="name">{{type.shopName}}</view>
+					<view class="tips">{{type.shopSmall}}</view>
+					<view class="order-num">
+						<view class="fl_l money">${{type.money}}</view>
+						<view class="fl_r shop-num">x{{type.numShop}}</view>
+					</view>
+				</view>
 			</view>
+			<view class="shop-all">
+				<view class="all-money">
+          共{{item.all_order}}件商品 实付：<text>￥{{item.money}}</text>(免邮)
+				</view>
+			</view>
+
 		</view>
 	</view>
 

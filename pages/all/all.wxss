@@ -380,6 +380,9 @@
   text-align: center;
   font-size: 14px;
 }
+.tab{
+  overflow: hidden;
+}
 .tab view{
 float: left;
 width: 18%;
@@ -391,4 +394,72 @@ line-height: 48rpx;
 .tab .color{
 border-bottom: 2px solid #f23030;
 color: #f23030  
+}
+.fl_l{
+  float: left;
+}
+.fl_r{
+  float: right;
+}
+.icon{
+  width: 5%;
+  margin-top: 7rpx;
+  margin-left: 5%;
+}
+.shop{
+  overflow: hidden;
+}
+.num{
+  width: 65%;
+  font-size: 31rpx;
+  padding-left: 2%;
+}
+.status{
+  font-size: 31rpx;
+  width: 23%;
+  color:red;
+}
+.title{
+  border-bottom: 1px solid black;
+  overflow: hidden;
+  line-height: 50rpx;
+}
+.shop{
+  padding-top: 28rpx;
+  padding-bottom: 28rpx;
+  border-bottom: 1px solid black;
+}
+.shop image{
+  width: 210rpx;
+  height: 210rpx;
+  margin-left: 20rpx;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+.shop-msg{
+  width: 480rpx;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.shop-msg .name{
+height: 70rpx;
+margin-top: 15rpx;
+line-height: 43rpx;
+font-size: 28rpx;
+}
+.shop-msg .tips{
+  color: #c6c6c6;
+height: 70rpx;
+margin-top: 15rpx;
+font-size: 26rpx;
+line-height: 43rpx;
+}
+.shop-msg .money{
+  color: red;
+  font-size: 34rpx;
+}
+.shop-msg .shop-num{
+  font-size: 24rpx;
+  color: #666666;
 }
