@@ -423,6 +423,7 @@ color: #f23030
   border-bottom: 1px solid black;
   overflow: hidden;
   line-height: 50rpx;
+  padding-bottom: 10rpx;
 }
 .shop{
   padding-top: 28rpx;
@@ -448,6 +449,9 @@ margin-top: 15rpx;
 line-height: 43rpx;
 font-size: 28rpx;
 }
+.order-line{
+ margin-top: 30rpx; 
+}
 .shop-msg .tips{
   color: #c6c6c6;
 height: 70rpx;
@@ -462,4 +466,36 @@ line-height: 43rpx;
 .shop-msg .shop-num{
   font-size: 24rpx;
   color: #666666;
+}
+.all-money{
+  font-size: 28rpx;
+  line-height: 70rpx;
+  border-bottom: 1px solid black;
+  text-align: right;
+  padding-right: 30rpx;
+}
+.all-money text{
+  color: red;
+  font-size: 32rpx;
+}
+.btn-shop{
+  overflow: hidden;
+  width: 80%;
+  float: right;
+  margin-top: 24rpx;
+  margin-right: 20rpx;
+}
+.shop-all{
+  overflow: hidden;
+}
+.btn-shop view{
+  float: left;
+  width: 30%;
+  margin: 0px 1.5%;
+  border: 1px solid black;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 48rpx;
+  border-radius: 3px;
 }

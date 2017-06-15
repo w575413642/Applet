@@ -43,7 +43,27 @@ Page({
           }],
         all_order:'2',
         money:'32.00'
-      }]
+      },
+        {
+          num: '13131313131131313131',
+          status: '买家已发货',
+          shop_n: [{
+            img: 'http://demoshop.youpzt.com/uploads/product/2017-01-27/588a21675dd1d.jpg',
+            shopName: '华为（HUAWEI）M2 10.0平板电脑 Wifi月光银',
+            shopSmall: '尺寸：7存及以下 内存：32G 颜色：黑色',
+            money: '2333.00',
+            numShop: '12'
+          },
+          {
+            img: 'http://demoshop.youpzt.com/uploads/product/2017-01-27/588a21675dd1d.jpg',
+            shopName: '华为（HUAWEI）M2 10.0平板电脑 Wifi月光银',
+            shopSmall: '尺寸：7存及以下 内存：32G 颜色：黑色',
+            money: '2333.00',
+            numShop: '12'
+          }],
+          all_order: '2',
+          money: '32.00'
+        }]
   },
   changeOrder: function(e){
     // 切换tab

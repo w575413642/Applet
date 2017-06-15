@@ -8,7 +8,7 @@
 	</view>
 	<!--order-->
 	<view class="order">
-		<view class="order-title" wx:for="{{shop}}">
+		<view class="order-line" wx:for="{{shop}}">
 			<view class="title">
 				<text class="fl_l icon iconfont icon-dingdanhao font fl_l color_red"></text>
 				<view class="fl_l num">订单号：{{ item.num }}</view>
@@ -31,8 +31,18 @@
 				<view class="all-money">
           共{{item.all_order}}件商品 实付：<text>￥{{item.money}}</text>(免邮)
 				</view>
+        <view class="btn-shop">
+          <view class="del">
+          删除订单
+          </view>
+          <view class="query">
+          查询物流
+          </view>
+          <view class="evaluate">
+          评价晒单
+          </view>
+        </view>
 			</view>
-
 		</view>
 	</view>
 
