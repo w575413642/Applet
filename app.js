@@ -1,5 +1,9 @@
 //app.js
+var getcode = require('utils/getCode.js');
 App({
+  port:{
+    home: 'https://demoshopapi.youpzt.com/home',
+  },
   onLaunch: function () {
     //调用API从本地缓存中获取数据
     var logs = wx.getStorageSync('logs') || []
@@ -23,6 +27,10 @@ App({
         }
       })
     }
+  },
+  // 加密
+  coding: function (c) {
+    return getcode.getCode(c);
   },
   globalData:{
     userInfo:null

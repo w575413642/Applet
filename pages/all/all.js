@@ -1,5 +1,7 @@
 //logs.js
-var util = require('../../utils/util.js')
+var util = require('../../utils/util.js');
+var app = getApp();
+var getcode = require('../../utils/getCode.js');
 Page({
   data: {
     ac: 1,    
@@ -65,6 +67,21 @@ Page({
           money: '32.00'
         }]
   },
+  getdata: function () {
+    console.log(this.coding(app.port.home))
+    wx.request({
+      url: app.port.home,
+      data:{
+        sign: this.coding(app.port.home)
+      },
+      header:{
+        'content-type':'application/json'
+      },
+      success: function (information){
+        console.log(information)
+      }
+    })
+  },
   changeOrder: function(e){
     // 切换tab
    this.setData({
@@ -72,7 +89,12 @@ Page({
    })
   //  重新刷新库
   },
+  coding: function (c) {
+    return getcode.getCode(c);
+  },
   onLoad: function () {
+    // console.log(app.a)
+    this.getdata();
     this.setData({
       logs: (wx.getStorageSync('logs') || []).map(function (log) {
         return util.formatTime(new Date(log))
