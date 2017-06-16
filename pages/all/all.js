@@ -68,24 +68,20 @@ Page({
         }]
   },
   getdata: function () {
-    var myDate = new Date();
-    var cc = myDate.toLocaleDateString().split('/')
-    if (cc[0].length == 1){
-        cc[0] = '0'+cc[0]
-    }
-    console.log()
-    console.log(app.port.home + cc[2] + '-' + cc[0] + '-' + cc[1] + '_' + myDate.toLocaleTimeString().substr(0,2) + '97fd5908881e5923486861adb639fc223115')
-    console.log(this.coding(app.port.home + cc[2] + '-' + cc[0] + '-' + cc[1] + '_' + myDate.toLocaleTimeString().substr(0, 2) + '97fd5908881e5923486861adb639fc223115'))
+    console.log(this.coding(app.port.home))
     wx.request({
       url: app.port.home,
       data:{
-        sign: this.coding(app.port.home + cc[2] + '-' + cc[0] + '-' + cc[1] + '_' + myDate.toLocaleTimeString().substr(0, 2) + '97fd5908881e5923486861adb639fc223115')
+        sign: this.coding(app.port.home)
       },
       header:{
         'content-type':'application/json'
       },
       success: function (information){
         console.log(information)
+        this.setData({
+          
+        })
       }
     })
   },
