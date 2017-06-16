@@ -1,1 +1,21 @@
 <!--logs.wxml-->
+<view class="cate">
+  <view class="tab fl_l">
+    <view bindtap="sidebar" class="{{(id == item.ks)? 'active' : 'a'}}" data-ks="{{item.ks}}" wx:for="{{tab}}">{{item.name}}</view>
+  </view>
+  <!--content-->
+<view class="box fl_l">
+  <view class="content" wx:for="{{label}}">
+    <image class="kv" src="{{item.img}}"></image>
+    <view class="text">{{item.text}}</view>
+    <!--classify-->
+    <view class="classify" wx:for="{{item.content}}" wx:for-item="classi">
+    <view class="title">{{classi.title}}</view>
+      <view class="category fl_l" wx:for="{{classi.classify}}" wx:for-item="change">
+        <image src="{{change.arimg}}"></image>
+        <view class="name">{{change.name}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+</view>

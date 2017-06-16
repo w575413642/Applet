@@ -1,8 +1,69 @@
-.log-list {
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+/*all*/
+.cate{
+  overflow: hidden;
 }
-.log-item {
-  margin: 10rpx;
+.tab{
+  width: 220rpx;
+  border-right: 5rpx solid #f3f5f7;
+  height: 1114rpx;
+}
+.tab view{
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 88rpx;
+  border-left: 3px solid white;
+}
+.tab .active{
+  background: #f3f5f7;
+  color: #f23030;
+  border-left: 3px solid #f23030;
+}
+.fl_l{
+  float: left;
+}
+.box{
+  background: #f3f5f7;
+  width: 520rpx;
+  overflow: hidden;
+}
+/*content*/
+.kv{
+  width: 500rpx;
+  border: 1px solid black;
+  margin: 0px 10rpx;
+  height: 240rpx;
+}
+.text{
+  background: #f23030;
+  color: white;
+  text-align: center;
+  border-radius: 10rpx;
+  width: 500rpx;
+  margin: 10rpx 10rpx;
+  font-size: 30rpx;
+  line-height: 70rpx;
+}
+/*classify*/
+.classify{
+  width: 500rpx;
+  margin: 0px 10rpx;
+  overflow: hidden;
+}
+.title{
+  font-size: 30rpx;
+  line-height: 70rpx;
+}
+.category{
+  width: 30%;
+  background: white;
+  margin: 0px 1.5%;
+  overflow: hidden;
+}
+.category image{
+  width: 150rpx;
+  height: 150rpx;
+}
+.category view{
+  text-align: center;
+  font-size: 28rpx;
 }

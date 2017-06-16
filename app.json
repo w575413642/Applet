@@ -1,9 +1,10 @@
 {
   "pages":[
+    "pages/cart/cart",
+    "pages/cate/cate",
     "pages/index/index",
     "pages/all/all",
     "pages/my/my",
-    "pages/cate/cate",
     "pages/logs/logs"
       ],
   "window":{
