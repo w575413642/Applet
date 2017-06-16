@@ -1,6 +1,24 @@
-<!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log" wx:key="*this">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+<!--cart.wxml-->
+<view class="container">
+<!--commodity-->
+<view class="no-expired" wx:for="{{order}}">
+  <view class="commodity over" wx:for="{{item.no_expired}}" wx:for-item="no_expired">
+    <view class="box fl_l">
+      <view class="select">
+      </view>
+    </view>
+    <view class="center fl_l over">
+      <image class="fl_l" src="{{no_expired.img}}"></image>
+      <view class="msg fl_l">
+        <text class="title">{{no_expired.title}}</text>
+        <view class="small">{{no_expired.small}}</view>
+        <view class="money">￥{{no_expired.money}}</view>
+      </view>
+    </view>
+  </view>
+  </view>
+  <!--be-overdue-->
+  <view class="be-expired">
+  
+  </view>
 </view>

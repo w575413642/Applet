@@ -1,8 +1,53 @@
-.log-list {
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+/*all*/
+.container{
+  /*background: #f3f5f7;*/
 }
-.log-item {
-  margin: 10rpx;
+/*no-expired*/
+.box{
+  width: 100rpx; 
+  margin-top: 20rpx;
+  /*border: 1rpx solid black;*/
+}
+.select{
+  border: 1px solid black;
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 500px;
+}
+.box{
+  margin-top: 60rpx;
+}
+.box .select{
+  margin: 0px auto;
+}
+.center{
+  width: 630rpx;
+}
+.msg{
+  width: 450rpx;  
+}
+.center image{
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 16rpx;
+}
+.center .view{
+  display: block;
+}
+.center .title{
+  white-space: pre-wrap;
+  display: block;
+  font-size: 35rpx;
+  line-height: 39rpx;
+  height: 80rpx;
+}
+.center .small{
+  font-size: 30rpx;
+  color: #c6c6c6;
+  line-height: 45.5rpx;
+}
+.center .money{
+  font-size: 33rpx;
+  color: red;
+  line-height: 45.5rpx;
 }
