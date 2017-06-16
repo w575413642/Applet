@@ -30,7 +30,7 @@ App({
   },
   // 加密
   coding: function (c) {
-    return getcode.getCode(c);
+    return getcode.hex_md5(c);
   },
   globalData:{
     userInfo:null
