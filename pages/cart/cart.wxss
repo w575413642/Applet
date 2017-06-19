@@ -51,3 +51,38 @@
   color: red;
   line-height: 45.5rpx;
 }
+/*operantion*/
+.operation{
+  margin-top: 6rpx;
+  margin-bottom: 6rpx;
+  /*overflow: hidden;*/
+}
+.rad{
+  border: 1rpx solid #c6c6c6;
+  width: 42rpx;
+  height: 42rpx;
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 38rpx;
+  border-radius: 50px;
+  color: red;
+  margin: 0px 16rpx;
+}
+.clean{
+  line-height: 55rpx;
+}
+/*be-expired*/
+.text{
+  text-align: center;
+  font-size: 30rpx;
+}
+.clean-commodity{
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 68rpx;
+  border: 1px solid darkorange;
+  color: darkorange;
+  width: 300rpx;
+  border-radius: 10rpx;
+  margin: auto;
+}

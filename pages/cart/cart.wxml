@@ -8,17 +8,33 @@
       </view>
     </view>
     <view class="center fl_l over">
+      <view class="over">
       <image class="fl_l" src="{{no_expired.img}}"></image>
       <view class="msg fl_l">
         <text class="title">{{no_expired.title}}</text>
         <view class="small">{{no_expired.small}}</view>
         <view class="money">￥{{no_expired.money}}</view>
       </view>
+      </view>
+      <view class="operation">
+        <view class="icon-shanchu iconfont fl_l clean"></view>
+          <view class="operation-btn over fl_r">
+            <!--<view class="reduce rad fl_l" style="font-size: 45rpx;">-</view>
+            <view class="num fl_l">{{mad}}</view>
+            <view class="add rad fl_l">+</view>-->
+             <picker bindchange="bindPickerChange" value="{{indexs}}" range="{{array}}">
+              <view class="picker">
+                {{array[indexs]}}
+              </view>
+            </picker>
+          </view>
+      </view>
     </view>
   </view>
   </view>
   <!--be-overdue-->
   <view class="be-expired">
-  
+    <view class="text">以下商品无法一起进行购买</view>
+    <view class="clean-commodity">清空失效商品</view>
   </view>
 </view>
